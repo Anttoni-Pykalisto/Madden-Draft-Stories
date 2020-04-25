@@ -1,0 +1,16 @@
+print('creating test story')
+
+import json
+
+story_name = "story_1.json"
+path = "../Stories/" + story_name
+
+story = {
+    "story": {
+        "name": "Jonathan Taylor is bae",
+        "species": "Lit"
+    }
+}
+
+with open(path, "w") as write_file:
+    json.dump(story, write_file)
